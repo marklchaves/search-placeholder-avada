@@ -1,0 +1,13 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+label > span {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+fieldset {
+    margin-top: 2%;
+}
