@@ -8,13 +8,13 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://caughtmyeye.cc
+ * @link              https://github.com/marklchaves/avada-search-placeholder
  * @since             1.0.0
  * @package           Avada_Search_Placeholder
  *
  * @wordpress-plugin
  * Plugin Name:       Avada Search Placeholder
- * Plugin URI:        https://caughtmyeye.cc
+ * Plugin URI:       https://github.com/marklchaves/avada-search-placeholder
  * Description:       Allows you to customise the search box placeholder text for Avada.
  * Version:           1.0.0
  * Author:            caught my eye

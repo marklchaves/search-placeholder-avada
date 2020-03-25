@@ -16,7 +16,7 @@ This is a beta version. The official version will be released once it's availabl
 
 == Installation ==
 
-1. Download the zip file. 
+1. Download the [zip file](https://github.com/marklchaves/avada-search-placeholder/blob/master/avada-search-placeholder.zip). 
 1. Use the Plugins > Add New to upload the zip or manually upload the zip file to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
