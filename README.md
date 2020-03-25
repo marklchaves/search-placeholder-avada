@@ -1,26 +1,36 @@
-=== Plugin Name ===
-Contributors: mlchaves
-Donate link: https://caughtmyeye.cc
-Tags: comments, spam
+# Avada Search Placeholder
+
+Contributors: mark l chaves
+
+Donate link: https://ko-fi.com/marklchaves
+
+Tags: wordpress,avada,search,placeholder
+
 Requires at least: 5.3.2
+
 Tested up to: 5.3.2
+
 Stable tag: 1.0.0
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Allows you to customise the search box placeholder text for Avada.
+---
 
-== Description ==
+**Allows you to customise the search box placeholder text for Avada.**
+
+## Description
 
 This is a beta version. The official version will be released once it's available on WordPress.org.
 
-== Installation ==
+## Installation
 
 1. Download the [zip file](https://github.com/marklchaves/avada-search-placeholder/blob/master/avada-search-placeholder.zip). 
 1. Use the Plugins > Add New to upload the zip or manually upload the contents of the zip file to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions
 
 Coming soon!
 
@@ -32,9 +42,11 @@ An answer to that question.
 
 Answer to foo bar dilemma.
 
-== Screenshots ==
+## Screen Captures
 
-Coming soon!
+![Result](https://raw.githubusercontent.com/marklchaves/avada-search-placeholder/master/screencaptures/avada-search-placeholder.jpg)
+
+More in the [screencaptures](https://github.com/marklchaves/avada-search-placeholder/tree/master/screencaptures) directory.
 
 1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
 the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
