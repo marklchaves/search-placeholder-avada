@@ -104,6 +104,8 @@ class Avada_Search_Placeholder_Admin {
 	 * Register the administration menu for this plugin into the WordPress Dashboard menu.
 	 *
 	 * @since 1.0.0
+	 * 
+	 * ~mlc 26 Mar 2020
 	 */
 
 	public function add_plugin_admin_menu()
