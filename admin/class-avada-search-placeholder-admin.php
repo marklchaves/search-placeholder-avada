@@ -120,8 +120,12 @@ class Avada_Search_Placeholder_Admin {
 		// All inputs        
 		$valid = array();
 
+		$check_input = $input['custom-text'];
+
+		$check_input = sanitize_text_field( $check_input );
+
 		// Search placeholder
-		$valid['custom-text'] = (isset($input['custom-text']) && !empty($input['custom-text'])) ? $input['custom-text'] : 'Avada Search Placeholder';
+		$valid['custom-text'] = (isset($check_input) && !empty($check_input)) ? $check_input : 'Avada Search Placeholder';
 
 		return $valid;
 	}
