@@ -8,7 +8,7 @@ Tags: wordpress,avada,search,placeholder
 
 Requires at least: 5.3.2
 
-Tested up to: 5.3.2
+Tested up to: 5.4
 
 Stable tag: 0.0.1
 
@@ -41,6 +41,12 @@ This is a beta version. The official version will be released once it's availabl
 ![Settings Page](https://raw.githubusercontent.com/marklchaves/avada-search-placeholder/master/screencaptures/avada-search-placeholder-admin-settings.png "Settings page")
 
 ![Result](https://raw.githubusercontent.com/marklchaves/avada-search-placeholder/master/screencaptures/avada-search-placeholder.jpg "Example result")
+
+---
+
+## Version Notes
+
+This latest version has been tested on Avada 6.2.2.
 
 ---
 
