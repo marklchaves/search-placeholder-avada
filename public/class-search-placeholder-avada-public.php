@@ -6,8 +6,8 @@
  * @link       https://caughtmyeye.cc
  * @since      1.0.0
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/public
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/public
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/public
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/public
  * @author     caught my eye <mark@marklchaves.com>
  */
-class Avada_Search_Placeholder_Public {
+class Search_Placeholder_Avada_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -60,7 +60,7 @@ class Avada_Search_Placeholder_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/avada-search-placeholder-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/search-placeholder-avada-public.css', array(), $this->version, 'all' );
 	}
 
 	/**
@@ -70,13 +70,13 @@ class Avada_Search_Placeholder_Public {
 	 */
 	public function enqueue_scripts() {
 		
-		wp_register_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/avada-search-placeholder-public.js', '', $this->version, true ); // Put in footer
+		wp_register_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/search-placeholder-avada-public.js', '', $this->version, true ); // Put in footer
 
         // Grab all options
         $options = get_option($this->plugin_name);
 
 		$custom_text = 
-			(empty($options['custom-text'])) ? 'Avada Search Placeholder' : $options['custom-text'];	
+			(empty($options['custom-text'])) ? 'Search Placeholder Avada' : $options['custom-text'];	
 
 		// Localize the script with new data	
 		$searchArgs = array(

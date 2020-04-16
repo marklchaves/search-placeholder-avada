@@ -6,8 +6,8 @@
  * @link       https://caughtmyeye.cc
  * @since      1.0.0
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/includes
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/includes
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/includes
  * @author     caught my eye <mark@marklchaves.com>
  */
-class Avada_Search_Placeholder_Deactivator {
+class Search_Placeholder_Avada_Deactivator {
 
 	/**
 	 * Short Description. (use period)

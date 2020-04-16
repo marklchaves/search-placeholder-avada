@@ -8,8 +8,8 @@
  * @link       https://caughtmyeye.cc
  * @since      1.0.0
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/public/partials
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/public/partials
  */
 ?>
 

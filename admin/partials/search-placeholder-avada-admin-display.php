@@ -8,8 +8,8 @@
  * @link       https://caughtmyeye.cc
  * @since      1.0.0
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/admin/partials
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/admin/partials
  */
 ?>
 
@@ -18,13 +18,13 @@
 
     <h2><?php echo esc_html(get_admin_page_title()); ?></h2>
 
-    <form method="post" name="avada-search-placeholder_options" action="options.php">
+    <form method="post" name="search-placeholder-avada_options" action="options.php">
         <?php
         // Grab all options
         $options = get_option($this->plugin_name);
 
         $custom_text = 
-            (empty($options['custom-text'])) ? 'Avada Search Placeholder' : $options['custom-text'];
+            (empty($options['custom-text'])) ? 'Search Placeholder Avada' : $options['custom-text'];
 
         ?>
         <?php
@@ -35,11 +35,11 @@
         <!-- Input Field for Search Placeholder Text -->
         <fieldset>
             <legend class="screen-reader-text">
-                <span>Avada search placeholder text</span>
+                <span>Search Placeholder Avada text</span>
             </legend>
             <label for="<?php echo $this->plugin_name; ?>-custom-text">
                 <span>
-                    <?php esc_attr_e('Avada search placeholder text', $this->plugin_name); ?>
+                    <?php esc_attr_e('Search Placeholder Avada text', $this->plugin_name); ?>
                 </span>
                 <input type="text" id="<?php echo $this->plugin_name; ?>-custom-text" name="<?php echo $this->plugin_name; ?>[custom-text]" value="<?php echo $custom_text; ?>" />
             </label>

@@ -6,8 +6,8 @@
  * @link       https://caughtmyeye.cc
  * @since      1.0.0
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/admin
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/admin
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/admin
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/admin
  * @author     caught my eye <mark@marklchaves.com>
  */
-class Avada_Search_Placeholder_Admin {
+class Search_Placeholder_Avada_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -60,7 +60,7 @@ class Avada_Search_Placeholder_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/avada-search-placeholder-admin.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/search-placeholder-avada-admin.css', array(), $this->version, 'all' );
 	}
 
 	/**
@@ -69,7 +69,7 @@ class Avada_Search_Placeholder_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/avada-search-placeholder-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/search-placeholder-avada-admin.js', array( 'jquery' ), $this->version, false );
 	}
 
 	/**
@@ -82,7 +82,7 @@ class Avada_Search_Placeholder_Admin {
 
 	public function add_plugin_admin_menu()
 	{
-		add_options_page('Avada Search Placeholder Options Settings', 'Avada Search Placeholder', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page'));
+		add_options_page('Search Placeholder Avada Options Settings', 'Search Placeholder Avada', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page'));
 	}
 
 	/**
@@ -111,7 +111,7 @@ class Avada_Search_Placeholder_Admin {
 
 	public function display_plugin_setup_page()
 	{
-		include_once('partials/avada-search-placeholder-admin-display.php');
+		include_once('partials/search-placeholder-avada-admin-display.php');
 	}
 
 	// ~mlc 26 Mar 2020
@@ -125,7 +125,7 @@ class Avada_Search_Placeholder_Admin {
 		$check_input = sanitize_text_field( $check_input );
 
 		// Search placeholder
-		$valid['custom-text'] = (isset($check_input) && !empty($check_input)) ? $check_input : 'Avada Search Placeholder';
+		$valid['custom-text'] = (isset($check_input) && !empty($check_input)) ? $check_input : 'Search Placeholder Avada';
 
 		return $valid;
 	}

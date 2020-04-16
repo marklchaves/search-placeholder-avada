@@ -6,8 +6,8 @@
  * @link       https://caughtmyeye.cc
  * @since      1.0.0
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/includes
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/includes
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/includes
  * @author     caught my eye <mark@marklchaves.com>
  */
-class Avada_Search_Placeholder_Loader {
+class Search_Placeholder_Avada_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

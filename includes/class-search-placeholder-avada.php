@@ -9,8 +9,8 @@
  * @link       https://caughtmyeye.cc
  * @since      1.0.0
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/includes
+ * @package    SEARCH_PLACEHOLDER_AVADA
+ * @subpackage SEARCH_PLACEHOLDER_AVADA/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/includes
+ * @package    SEARCH_PLACEHOLDER_AVADA
+ * @subpackage SEARCH_PLACEHOLDER_AVADA/includes
  * @author     caught my eye <mark@marklchaves.com>
  */
-class Avada_Search_Placeholder {
+class SEARCH_PLACEHOLDER_AVADA {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Avada_Search_Placeholder {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Avada_Search_Placeholder_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      SEARCH_PLACEHOLDER_AVADA_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -67,12 +67,12 @@ class Avada_Search_Placeholder {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'AVADA_SEARCH_PLACEHOLDER_VERSION' ) ) {
-			$this->version = AVADA_SEARCH_PLACEHOLDER_VERSION;
+		if ( defined( 'SEARCH_PLACEHOLDER_AVADA_VERSION' ) ) {
+			$this->version = SEARCH_PLACEHOLDER_AVADA_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'avada-search-placeholder';
+		$this->plugin_name = 'search-placeholder-avada';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -86,10 +86,10 @@ class Avada_Search_Placeholder {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Avada_Search_Placeholder_Loader. Orchestrates the hooks of the plugin.
-	 * - Avada_Search_Placeholder_i18n. Defines internationalization functionality.
-	 * - Avada_Search_Placeholder_Admin. Defines all hooks for the admin area.
-	 * - Avada_Search_Placeholder_Public. Defines all hooks for the public side of the site.
+	 * - SEARCH_PLACEHOLDER_AVADA_Loader. Orchestrates the hooks of the plugin.
+	 * - SEARCH_PLACEHOLDER_AVADA_i18n. Defines internationalization functionality.
+	 * - SEARCH_PLACEHOLDER_AVADA_Admin. Defines all hooks for the admin area.
+	 * - SEARCH_PLACEHOLDER_AVADA_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -103,33 +103,33 @@ class Avada_Search_Placeholder {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-avada-search-placeholder-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-search-placeholder-avada-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-avada-search-placeholder-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-search-placeholder-avada-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-avada-search-placeholder-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-search-placeholder-avada-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-avada-search-placeholder-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-search-placeholder-avada-public.php';
 
-		$this->loader = new Avada_Search_Placeholder_Loader();
+		$this->loader = new SEARCH_PLACEHOLDER_AVADA_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Avada_Search_Placeholder_i18n class in order to set the domain and to register the hook
+	 * Uses the SEARCH_PLACEHOLDER_AVADA_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -137,7 +137,7 @@ class Avada_Search_Placeholder {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Avada_Search_Placeholder_i18n();
+		$plugin_i18n = new SEARCH_PLACEHOLDER_AVADA_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -152,14 +152,14 @@ class Avada_Search_Placeholder {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Avada_Search_Placeholder_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new SEARCH_PLACEHOLDER_AVADA_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
-		/* Added below for Avada Search Placeholder Plugin ~mlc 25 March 2020 */
+		/* Added below for Search Placeholder Avada Plugin ~mlc 25 March 2020 */
 		
-		// Add menu item for Avada Search Placeholder
+		// Add menu item for Search Placeholder Avada
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_plugin_admin_menu' );
 
 		// Add Settings link to the plugin
@@ -179,7 +179,7 @@ class Avada_Search_Placeholder {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Avada_Search_Placeholder_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new SEARCH_PLACEHOLDER_AVADA_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -210,7 +210,7 @@ class Avada_Search_Placeholder {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Avada_Search_Placeholder_Loader    Orchestrates the hooks of the plugin.
+	 * @return    SEARCH_PLACEHOLDER_AVADA_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

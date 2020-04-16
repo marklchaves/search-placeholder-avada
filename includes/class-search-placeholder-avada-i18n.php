@@ -9,8 +9,8 @@
  * @link       https://caughtmyeye.cc
  * @since      1.0.0
  *
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/includes
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Avada_Search_Placeholder
- * @subpackage Avada_Search_Placeholder/includes
+ * @package    Search_Placeholder_Avada
+ * @subpackage Search_Placeholder_Avada/includes
  * @author     caught my eye <mark@marklchaves.com>
  */
-class Avada_Search_Placeholder_i18n {
+class Search_Placeholder_Avada_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Avada_Search_Placeholder_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'avada-search-placeholder',
+			'search-placeholder-avada',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

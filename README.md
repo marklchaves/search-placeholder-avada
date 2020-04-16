@@ -1,4 +1,4 @@
-# Avada Search Placeholder
+# Search Placeholder Avada
 
 Contributors: mark l chaves
 
@@ -10,7 +10,7 @@ Requires at least: 5.3.2
 
 Tested up to: 5.4
 
-Stable tag: 0.0.1
+Stable tag: 1.0.0
 
 License: GPLv2 or later
 
@@ -22,11 +22,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ## Description
 
-This is a beta version. The official version will be released once it's available on WordPress.org.
+The official version is now available on [WordPress.org](https://wordpress.org/plugins/search-placeholder-avada/
+).
 
 ## Installation
 
-1. Download the [zip file](https://github.com/marklchaves/avada-search-placeholder/blob/master/avada-search-placeholder.zip). 
 1. Use the wp-admin > **Plugins > Add New** to upload the zip or manually upload the **contents** of the zip file to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress. The plugin is now available in wp-admin > **Settings** menu.
 
@@ -36,11 +36,11 @@ This is a beta version. The official version will be released once it's availabl
 
 ## Screen Captures
 
-![Where to Find Plugin](https://raw.githubusercontent.com/marklchaves/avada-search-placeholder/master/screencaptures/avada-search-placeholder-admin-menu.png "Where to find the plugin")
+![Where to Find Plugin](https://raw.githubusercontent.com/marklchaves/search-placeholder-avada/master/screencaptures/search-placeholder-avada-admin-menu.png "Where to find the plugin")
 
-![Settings Page](https://raw.githubusercontent.com/marklchaves/avada-search-placeholder/master/screencaptures/avada-search-placeholder-admin-settings.png "Settings page")
+![Settings Page](https://raw.githubusercontent.com/marklchaves/search-placeholder-avada/master/screencaptures/search-placeholder-avada-admin-settings.png "Settings page")
 
-![Result](https://raw.githubusercontent.com/marklchaves/avada-search-placeholder/master/screencaptures/avada-search-placeholder.jpg "Example result")
+![Result](https://raw.githubusercontent.com/marklchaves/search-placeholder-avada/master/screencaptures/search-placeholder-avada.jpg "Example result")
 
 ---
 

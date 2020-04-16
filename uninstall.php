@@ -22,7 +22,7 @@
  * @link       https://caughtmyeye.cc
  * @since      1.0.0
  *
- * @package    Avada_Search_Placeholder
+ * @package    Search_Placeholder_Avada
  */
 
 // If uninstall not called from WordPress, then exit.
