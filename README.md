@@ -1,3 +1,5 @@
+![Search Placeholder Avada Hero Banner](https://ps.w.org/search-placeholder-avada/assets/banner-1554x500.jpg)
+
 # Search Placeholder Avada
 
 Contributors: mark l chaves
