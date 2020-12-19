@@ -10,7 +10,7 @@ Tags: wordpress,avada,search,placeholder
 
 Requires at least: 5.3.2
 
-Tested up to: 5.5
+Tested up to: 5.6
 
 Stable tag: 1.1.0
 
@@ -38,18 +38,20 @@ The official version is now available on [WordPress.org](https://wordpress.org/p
 
 ## Screen Captures
 
-![Where to Find Plugin](https://raw.githubusercontent.com/marklchaves/search-placeholder-avada/master/screencaptures/search-placeholder-avada-admin-menu.png "Where to find the plugin")
+![Where to Find Plugin](https://ps.w.org/search-placeholder-avada/assets/screenshot-4.png "Where to find the plugin")
 
-![Settings Page](https://raw.githubusercontent.com/marklchaves/search-placeholder-avada/master/screencaptures/search-placeholder-avada-admin-settings.png "Settings page")
+![Settings Page](https://ps.w.org/search-placeholder-avada/assets/screenshot-5.png "Settings page")
 
-![Result](https://raw.githubusercontent.com/marklchaves/search-placeholder-avada/master/screencaptures/search-placeholder-avada.jpg "Example result")
+![Result](https://ps.w.org/search-placeholder-avada/assets/screenshot-1.png "Example result")
+
+![Result](https://ps.w.org/search-placeholder-avada/assets/screenshot-2.png "Example result")
 
 ---
 
 ## Version Notes
 
 - Added code to delete placeholder option from the DB on plugin uninstall.
-- Tested on WordPress 5.5 and Avada 7.0.2.
+- Tested on WordPress 5.6 and Avada 7.1.2.
 
 ---
 
