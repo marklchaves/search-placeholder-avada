@@ -10,7 +10,7 @@ Tags: wordpress,avada,search,placeholder
 
 Requires at least: 5.3.2
 
-Tested up to: 5.6
+Tested up to: 5.7
 
 Stable tag: 1.1.0
 
@@ -51,7 +51,7 @@ The official version is now available on [WordPress.org](https://wordpress.org/p
 ## Version Notes
 
 - Added code to delete placeholder option from the DB on plugin uninstall.
-- Tested on WordPress 5.6 and Avada 7.1.2.
+- Tested on WordPress 5.7 and Avada 7.3.
 
 ---
 
