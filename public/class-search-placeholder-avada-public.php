@@ -73,17 +73,19 @@ class Search_Placeholder_Avada_Public {
 		wp_register_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/search-placeholder-avada-public.js', '', $this->version, true ); // Put in footer
 
         // Grab all options
-        $options = get_option($this->plugin_name);
+        $options = get_option( $this->plugin_name );
 
 		$custom_text = 
-			(empty($options['custom-text'])) ? 'Search Placeholder Avada' : $options['custom-text'];	
+			( empty($options['custom-text']) ) ? 'Search Placeholder Avada' : $options['custom-text'];	
+		$search_selectors = '';
 
 		// Localize the script with new data	
-		$searchArgs = array(
+		$search_args = array(
 			'search_placeholder' => $custom_text,
+			'search_selectors' => apply_filters( 'search_placeholder_css_selectors', $search_selectors ),
 			$this->plugin_name
 		);
-		wp_localize_script( $this->plugin_name, 'php_vars', $searchArgs );
+		wp_localize_script( $this->plugin_name, 'php_vars', $search_args );
 
 		wp_enqueue_script( $this->plugin_name );
 
