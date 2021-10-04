@@ -65,6 +65,8 @@ class Search_Placeholder_Avada_Public {
 
 	/**
 	 * Register the JavaScript for the public-facing side of the site.
+	 * 
+	 * New CSS search selectors filter for v2.0.
 	 *
 	 * @since    1.0.0
 	 */

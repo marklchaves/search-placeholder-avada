@@ -10,9 +10,9 @@ Tags: wordpress,avada,search,placeholder
 
 Requires at least: 5.3.2
 
-Tested up to: 5.8
+Tested up to: 5.8.1
 
-Stable tag: 1.1.0
+Stable tag: 2.0.0
 
 License: GPLv2 or later
 
@@ -45,6 +45,23 @@ The official version is now available on [WordPress.org](https://wordpress.org/p
 ![Result](https://ps.w.org/search-placeholder-avada/assets/screenshot-1.png "Example result")
 
 ![Result](https://ps.w.org/search-placeholder-avada/assets/screenshot-2.png "Example result")
+
+---
+
+## Version 2.0
+
+Version 2.0 will have built-in support for WordPress' Twenty Twenty themes and filter support for adding custom CSS selectors for any search input field.
+
+### In Beta for version 2.0
+
+```php
+/** Search Placeholder Avada: filter for you own CSS selector */
+
+add_filter( 'search_placeholder_css_selectors', function() {
+		return ".this-is-a-test-class, #this-is-a-test-id, .another-class";
+	}
+);
+```
 
 ---
 

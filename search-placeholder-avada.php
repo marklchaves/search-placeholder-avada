@@ -16,7 +16,7 @@
  * Plugin Name:       Search Placeholder Avada
  * Plugin URI:       https://github.com/marklchaves/search-placeholder-avada
  * Description:       Allows you to customise the search box placeholder text for Avada.
- * Version:           1.1.0
+ * Version:           2.0.0
  * Author:            caught my eye
  * Author URI:        https://caughtmyeye.cc
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'SEARCH_PLACEHOLDER_AVADA_VERSION', '1.1.0' );
+define( 'SEARCH_PLACEHOLDER_AVADA_VERSION', '2.0.0' );
 
 /**
  * The code that runs during plugin activation.
