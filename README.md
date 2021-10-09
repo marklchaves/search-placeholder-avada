@@ -20,7 +20,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ---
 
-**Allows you to customise the search box placeholder text for Avada.**
+**Allows you to customise the search box placeholder text for Avada, Twenty Twenty-One, and beyond.**
 
 ## Description
 
@@ -34,7 +34,13 @@ The official version is now available on [WordPress.org](https://wordpress.org/p
 
 ## Frequently Asked Questions
 
-**There will be an FAQ for the official release.**
+### Will this plugin work for other themes?
+
+**Yes!**
+
+Version 2.0.0 has built-in support for Avada and WordPress default themes. 
+
+It also has new [PHP filter hook](#version-20) for you to add any CSS selectors. That means Search Placeholder Avada can work for any theme :-)
 
 ## Screen Captures
 
@@ -50,12 +56,12 @@ The official version is now available on [WordPress.org](https://wordpress.org/p
 
 ## Version 2.0
 
-Version 2.0 will have built-in support for WordPress' Twenty Twenty themes and filter support for adding custom CSS selectors for any search input field.
+Version 2.0 has built-in support for WordPress' Twenty Twenty themes and filter support for adding custom CSS selectors for any search input field.
 
-### In Beta for version 2.0
+### Example Filter
 
 ```php
-/** Search Placeholder Avada: filter for you own CSS selector */
+/** Search Placeholder Avada: filter for your own CSS selectors. Separate selectors with a comma. */
 
 add_filter( 'search_placeholder_css_selectors', function() {
 		return ".this-is-a-test-class, #this-is-a-test-id, .another-class";
@@ -67,8 +73,9 @@ add_filter( 'search_placeholder_css_selectors', function() {
 
 ## Version Notes
 
-- Added code to delete placeholder option from the DB on plugin uninstall.
-- Tested on WordPress 5.8 and Avada 7.3.
+- Added built-in support for WordPress' Twenty Twenty themes.
+- Added filter for custom CSS selectors for any search input field.
+- Tested on Avada 7.4.2, Twenty Twenty-One, and WordPress 5.8.1.
 
 ---
 
